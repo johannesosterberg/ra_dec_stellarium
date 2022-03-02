@@ -45,7 +45,7 @@ while True:
             window['RA_MM'].update(values['RA_MM'][:-1]) 
         if event == 'RA_SS' and values['RA_SS'] and values['RA_SS'][-1] not in ('0123456789') or len(values['RA_SS'])>=3:
             window['RA_SS'].update(values['RA_SS'][:-1])
-        if event == 'DEC' and values['DEC'] and values['DEC'][-1] not in ('0123456789.'):
+        if event == 'DEC' and values['DEC'] and values['DEC'][-1] not in ('0123456789.-'):
             window['DEC'].update(values['DEC'][:-1])     
         if event == 'Submit' and values['RA_HH'] != "" and values['RA_MM'] != "" and values['RA_SS'] != None and values['DEC'] != "":   
             RA_h = values['RA_HH']
