@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import PySimpleGUI as sg
 import requests
 import math
@@ -66,7 +68,3 @@ while True:
                 window['Respons'].update(stellarium_post)
             except requests.exceptions.RequestException as error:
 	            window['Respons'].update(error)
-               
-           
-
-         
